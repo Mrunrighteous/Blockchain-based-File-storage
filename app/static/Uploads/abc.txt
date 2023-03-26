@@ -1,0 +1,22 @@
+2
+6
+8
+
+sudo yum update
+sudo yum install httpd.x86_64
+sudo systemctl start httpd.service
+sudo systemctl enable httpd.service
+curl localhost:80
+sudo su
+echo "hello world" > /var/www/html/index.html
+curl localhost:80
+echo "print"
+ echo "<html>
+> <head>
+> <title>
+> index</title>
+> <body>
+> <h1>dumb  ass</h1>
+> <p>hfakjhfkjalfhahmfnalhfcoaj</p>
+> </body>
+> </html>" > /var/www/html/index.html
